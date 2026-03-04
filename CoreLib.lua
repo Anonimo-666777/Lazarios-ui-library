@@ -133,8 +133,8 @@ end
 -- ── MakeWindow ────────────────────────────────────
 function Library:MakeWindow(config)
     config = config or {}
-    local Title     = config.Title     or "NexusHub"
-    local SubTitle  = config.SubTitle  or ""
+    local Title     = config.Title     or "Lazarus Lib"
+    local SubTitle  = config.SubTitle  or "David e menkato"
     local ThemeName = config.Theme     or "Dark"
     local ToggleKey = config.ToggleKey or Enum.KeyCode.RightShift
     local LogoId    = config.LogoId    or ""  -- ImageId opcional
