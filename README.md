@@ -55,7 +55,19 @@ Tab1:MakeButton({
 
 troque name para o nome que quer e substitua print pela função que quer
 
-##
+## toggle
+
+```lua
+Tab1:MakeToggle({
+	Name = "Speed Hack",
+	Default = false,
+	Callback = function(state)
+		print("Speed Hack:", state)
+	end,
+})
+```
+
+mude name para o nome que que
 
 # 📄Info
 
