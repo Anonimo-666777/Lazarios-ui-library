@@ -2,7 +2,7 @@
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
-# ❓como usar? 
+# ❓como usar
 
 ## Loader
 
@@ -10,21 +10,37 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anonimo-666777/Lazarios-ui-library/main/CoreLib.lua"))()
 ```
 
-# 📄Info📃 
+## Window
+
+```lua
+local Win = NexusUI:MakeWindow({
+	Title = "Meu Hub",
+	SubTitle = "v1.0",
+	Theme = "Dark",
+	ToggleKey = Enum.KeyCode.RightShift,
+})
+```
+
+troque tema,título,subtítulo e toggleKey
+Nota:ToggleKey é para pc
+
+## 
+
+# 📄Info
 
 VERSÃO:v0.0.1
 
 📱Compatibilidade:
 
-💻🖥Pc✅
+💻🖥Pc
 
-🍎📱ios✅
+🍎📱ios
 
-📱android✅
+📱android
 
 ©2026 lib Davidgames3d e menkato©
 
-# ⭐Créditos⭐
+# ⭐Créditos
 
 👥Criadores:
 davidgames3d e menkato
@@ -34,8 +50,10 @@ davidgames3d e menkato
 👨‍💻código: 
 davidgames3d e menkato 
 
-↓server do discord💙
+# redes sociais
 
-↓grupos WhatsApp↓💚
+↓server do discord
 
-↓canais do YouTube↓❤
+↓grupos WhatsApp↓
+
+↓canais do YouTube↓
