@@ -2,9 +2,13 @@
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
-# Como usar❔
+# ❓como usar? 
 
+## Loader
 
+```lua
+local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anonimo-666777/Lazarios-ui-library/main/CoreLib.lua"))()
+```
 
 # 📄Info📃 
 
