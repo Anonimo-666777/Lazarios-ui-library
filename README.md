@@ -14,8 +14,6 @@ local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anoni
 
 VERSÃO:v0.0.1
 
-╭━━━━━━━━━━━━╮
-
 📱Compatibilidade:
 
 💻🖥Pc✅
@@ -23,8 +21,6 @@ VERSÃO:v0.0.1
 🍎📱ios✅
 
 📱android✅
-
-╰━━━━━━━━━━━━╯
 
 ©2026 lib Davidgames3d e menkato©
 
