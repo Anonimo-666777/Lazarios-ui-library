@@ -34,6 +34,14 @@ local Tab1 = Win:MakeTab({
 
 troque name e tab1 bote tab2, tab3 e etc e o name você muda para o que quiser
 
+## Section
+
+```lua
+Tab1:MakeSection("Geral")
+```
+
+troque Tab1 para tab que quer isso vale para botões, sections, slide rs e etc que tiver dentro da tab e troque o "geral" para o que quiser entre os " "
+
 ##
 
 # 📄Info
