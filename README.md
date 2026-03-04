@@ -24,7 +24,17 @@ local Win = NexusUI:MakeWindow({
 troque tema,título,subtítulo e toggleKey
 Nota:ToggleKey é para pc
 
-## 
+## tab
+
+```lua
+local Tab1 = Win:MakeTab({
+	Name = "Principal",
+})
+```
+
+troque name e tab1 bote tab2, tab3 e etc e o name você muda para o que quiser
+
+##
 
 # 📄Info
 
