@@ -42,6 +42,19 @@ Tab1:MakeSection("Geral")
 
 troque Tab1 para tab que quer isso vale para botões, sections, slide rs e etc que tiver dentro da tab e troque o "geral" para o que quiser entre os " "
 
+## button
+
+```lua
+Tab1:MakeButton({
+	Name = "Teleport",
+	Callback = function()
+		print("Teleport clicado")
+	end,
+})
+```
+
+troque name para o nome que quer e substitua print pela função que quer
+
 ##
 
 # 📄Info
