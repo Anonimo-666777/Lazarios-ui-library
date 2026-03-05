@@ -61,7 +61,8 @@ Nota:ToggleKey é para pc
 
 ```lua
 local Tab1 = Win:MakeTab({
-	Name = "Principal",
+    Name = "Principal",
+    Icon = "rbxassetid://123456",
 })
 ```
 
