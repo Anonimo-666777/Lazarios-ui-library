@@ -52,6 +52,7 @@ local Win = NexusUI:MakeWindow({
     Title = "Meu Hub",
     Theme = "Dark",
     RGBBorder = false,
+}) 
 ```
 
 troque tema,título,subtítulo e toggleKey
