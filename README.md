@@ -10,6 +10,9 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 ## light
 
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212548.png" alt="Texto Alternativo">
+
+
 ## dark 
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" alt="Texto Alternativo">
