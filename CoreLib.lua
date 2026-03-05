@@ -1,6 +1,6 @@
 -- ================================================
 --         Lazarus Library - by davidgames3d and menkayto
---         Versão: 1.0.2 | Luau | Roblox
+--         Versão: 1.0.4 estável | Luau | Roblox
 -- ================================================
 -- Uso via loadstring:
 --   local NexusUI = loadstring(game:HttpGet("SUA_URL"))()
@@ -1275,6 +1275,156 @@ end
     function WindowObj:ChangeTheme(name)
         T = Themes[name] or T
     end
+
+local ConfigTab = Instance.new("TextButton", TabList)
+ConfigTab.Size              = UDim2.new(1,0,0,34)
+ConfigTab.BackgroundColor3  = T.Element
+ConfigTab.Text              = "⚙ Config"
+ConfigTab.TextColor3        = T.SubText
+ConfigTab.TextSize          = 12
+ConfigTab.Font              = Enum.Font.GothamSemibold
+ConfigTab.TextXAlignment    = Enum.TextXAlignment.Left
+ConfigTab.BorderSizePixel   = 0
+Corner(ConfigTab, 6)
+Padding(ConfigTab, 0, 0, 8, 6)
+
+local ConfigPage = Instance.new("ScrollingFrame", ContentArea)
+ConfigPage.Size                  = UDim2.new(1,0,1,0)
+ConfigPage.BackgroundTransparency = 1
+ConfigPage.BorderSizePixel       = 0
+ConfigPage.ScrollBarThickness    = 3
+ConfigPage.ScrollBarImageColor3  = T.Accent
+ConfigPage.CanvasSize            = UDim2.new(0,0,0,0)
+ConfigPage.AutomaticCanvasSize   = Enum.AutomaticSize.Y
+ConfigPage.Visible               = false
+Padding(ConfigPage, 10, 10, 10, 10)
+ListLayout(ConfigPage, 6)
+
+local configObj = { Button = ConfigTab, BtnIcon = nil, Page = ConfigPage }
+table.insert(Tabs, configObj)
+
+ConfigTab.MouseEnter:Connect(function()
+	if ActiveTab and ActiveTab.Button == ConfigTab then return end
+	Tween(ConfigTab, {BackgroundColor3 = T.ElementHover}, 0.12)
+end)
+ConfigTab.MouseLeave:Connect(function()
+	if ActiveTab and ActiveTab.Button == ConfigTab then return end
+	Tween(ConfigTab, {BackgroundColor3 = T.Element}, 0.12)
+end)
+ConfigTab.MouseButton1Click:Connect(function()
+	SetActiveTab(configObj)
+end)
+
+-- Seção Tema
+local ThemeSection = Instance.new("TextLabel", ConfigPage)
+ThemeSection.Size                  = UDim2.new(1,-4,0,22)
+ThemeSection.BackgroundTransparency = 1
+ThemeSection.Text                  = "TEMA"
+ThemeSection.TextColor3            = T.Accent
+ThemeSection.TextSize              = 10
+ThemeSection.Font                  = Enum.Font.GothamBold
+ThemeSection.TextXAlignment        = Enum.TextXAlignment.Left
+local tline = Instance.new("Frame", ThemeSection)
+tline.Size             = UDim2.new(1,0,0,1)
+tline.Position         = UDim2.new(0,0,1,-1)
+tline.BackgroundColor3 = T.Border
+tline.BorderSizePixel  = 0
+
+local themeNames = {}
+for k in pairs(Themes) do table.insert(themeNames, k) end
+table.sort(themeNames)
+
+for _, tname in ipairs(themeNames) do
+	local TBtn = Instance.new("TextButton", ConfigPage)
+	TBtn.Size             = UDim2.new(1,-4,0,36)
+	TBtn.BackgroundColor3 = ThemeName == tname and T.Accent or T.Element
+	TBtn.Text             = tname
+	TBtn.TextColor3       = ThemeName == tname and Color3.new(1,1,1) or T.Text
+	TBtn.TextSize         = 12
+	TBtn.Font             = Enum.Font.GothamSemibold
+	TBtn.BorderSizePixel  = 0
+	Corner(TBtn, 8)
+	Stroke(TBtn, T.Border, 1)
+
+	TBtn.MouseEnter:Connect(function()
+		if ThemeName == tname then return end
+		Tween(TBtn, {BackgroundColor3 = T.ElementHover}, 0.12)
+	end)
+	TBtn.MouseLeave:Connect(function()
+		if ThemeName == tname then return end
+		Tween(TBtn, {BackgroundColor3 = T.Element}, 0.12)
+	end)
+	TBtn.MouseButton1Click:Connect(function()
+		PlayClick()
+		ThemeName = tname
+		T = Themes[tname] or T
+		for _, t in ipairs(themeNames) do
+			for _, child in ipairs(ConfigPage:GetChildren()) do
+				if child:IsA("TextButton") and child.Text == t then
+					child.BackgroundColor3 = t == tname and T.Accent or T.Element
+					child.TextColor3       = t == tname and Color3.new(1,1,1) or T.Text
+				end
+			end
+		end
+	end)
+end
+
+-- Seção Tamanho
+local SizeSection = Instance.new("TextLabel", ConfigPage)
+SizeSection.Size                  = UDim2.new(1,-4,0,22)
+SizeSection.BackgroundTransparency = 1
+SizeSection.Text                  = "TAMANHO"
+SizeSection.TextColor3            = T.Accent
+SizeSection.TextSize              = 10
+SizeSection.Font                  = Enum.Font.GothamBold
+SizeSection.TextXAlignment        = Enum.TextXAlignment.Left
+local sline = Instance.new("Frame", SizeSection)
+sline.Size             = UDim2.new(1,0,0,1)
+sline.Position         = UDim2.new(0,0,1,-1)
+sline.BackgroundColor3 = T.Border
+sline.BorderSizePixel  = 0
+
+local sizeOptions = {
+	{Label = "Pequeno",  W = 380, H = 290},
+	{Label = "Médio",    W = 480, H = 360},
+	{Label = "Grande",   W = 580, H = 430},
+}
+
+for _, opt in ipairs(sizeOptions) do
+	local SBtn = Instance.new("TextButton", ConfigPage)
+	SBtn.Size             = UDim2.new(1,-4,0,36)
+	SBtn.BackgroundColor3 = (Size.Width == opt.W) and T.Accent or T.Element
+	SBtn.Text             = opt.Label .. "  (" .. opt.W .. "×" .. opt.H .. ")"
+	SBtn.TextColor3       = (Size.Width == opt.W) and Color3.new(1,1,1) or T.Text
+	SBtn.TextSize         = 12
+	SBtn.Font             = Enum.Font.GothamSemibold
+	SBtn.BorderSizePixel  = 0
+	Corner(SBtn, 8)
+	Stroke(SBtn, T.Border, 1)
+
+	SBtn.MouseEnter:Connect(function()
+		if Size.Width == opt.W then return end
+		Tween(SBtn, {BackgroundColor3 = T.ElementHover}, 0.12)
+	end)
+	SBtn.MouseLeave:Connect(function()
+		if Size.Width == opt.W then return end
+		Tween(SBtn, {BackgroundColor3 = T.Element}, 0.12)
+	end)
+	SBtn.MouseButton1Click:Connect(function()
+		PlayClick()
+		Size = {Width = opt.W, Height = opt.H}
+		Tween(MainFrame, {Size = UDim2.new(0, opt.W, 0, opt.H)}, 0.25, Enum.EasingStyle.Back)
+		for _, s in ipairs(sizeOptions) do
+			for _, child in ipairs(ConfigPage:GetChildren()) do
+				if child:IsA("TextButton") and child.Text:find(s.Label) then
+					child.BackgroundColor3 = s.W == opt.W and T.Accent or T.Element
+					child.TextColor3       = s.W == opt.W and Color3.new(1,1,1) or T.Text
+				end
+			end
+		end
+	end)
+end
+
 
     return WindowObj
 end
