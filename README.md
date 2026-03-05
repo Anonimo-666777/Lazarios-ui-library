@@ -27,11 +27,11 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 ## DarkRed
 
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png"
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png">
 
 ## Purple
 
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png"
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png">
 
 # **❓como usar**
 
@@ -209,7 +209,7 @@ Nota: dá para botar quanto quiser com essa parte aqui
 
 **como o dialog é?** 
 
-<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-194325.png
+<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-194325.png>
 
 ## Image Label
 
