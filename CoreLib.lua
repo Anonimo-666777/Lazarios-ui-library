@@ -187,6 +187,20 @@ function Library:MakeWindow(config)
     MainFrame.ClipsDescendants = true
     Corner(MainFrame, 12)
     Stroke(MainFrame, T.Border, 1.5)
+local RGBBorder = config.RGBBorder or false
+
+if RGBBorder then
+	local RGBStroke = Instance.new("UIStroke", MainFrame)
+	RGBStroke.Thickness = 1.5
+	RGBStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+	local hue = 0
+	RunService.Heartbeat:Connect(function(dt)
+		if not MainFrame or not MainFrame.Parent then return end
+		hue = (hue + dt * 0.5) % 1
+		RGBStroke.Color = Color3.fromHSV(hue, 1, 1)
+	end)
+end
 
     -- ── TopBar ──
     local TopBar = Instance.new("Frame", MainFrame)
