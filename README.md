@@ -192,7 +192,7 @@ Win:Notify({
 
 # 📄Info
 
-VERSÃO: V1.0.2 stable
+VERSÃO: V1.0.4 Beta
 
 📱Compatibilidade:
 
