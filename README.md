@@ -1,12 +1,8 @@
-# Lazarus Lib Ui
+# **Lazarus Lib Ui**
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
-## Screenshot da lib
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" alt="Texto Alternativo">
-
-# temas da lib
+# **temas da lib**
 
 ## light
 
@@ -23,21 +19,21 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 ## Red
 
-sem foto ainda em teste beta
+<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-195057.png
 
 ## Blue
 
-sem foto ainda em teste beta
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png"
 
 ## DarkRed
 
-sem foto ainda em teste beta
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png"
 
 ## Purple
 
-sem foto ainda em teste beta
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png"
 
-# ❓como usar
+# **❓como usar**
 
 ## Loader
 
@@ -192,32 +188,65 @@ Win:Notify({
 })
 ```
 
-# 📄Info
+## Dialog 
 
-VERSÃO: V1.0.4 Beta
+```lua
+NexusUI:MakeDialog({
+    Title = "Tem certeza?",
+    Text  = "Isso vai resetar o personagem.",
+    Buttons = {
+        {Text = "Confirmar", Callback = function() print("confirmado") end},
+        {Text = "Cancelar",  Callback = function() print("cancelado") end},
+        {Text = "Saiba mais",Callback = function() print("info") end},
+    }
+})
+```
 
-📱Compatibilidade:
+Nota: dá para botar quanto quiser com essa parte aqui
+```lua
+{Text = "Texto",  Callback = function() print("print ou substitua esse print por uma função") end},
+```
 
-🖥Pc
+**como o dialog é?** 
 
-🍎ios
+<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-194325.png
 
-📱android
+## Image Label
 
+```lua
+Tab1:MakeImage({
+    Image  = "rbxassetid://123456",
+    Height = 150,
+    Desc   = "Logo do hub",
+})
+```
+
+# **📄Info**
+
+**VERSÃO: V1.0.4 Beta**
+
+**📱Compatibilidade:**
+
+-🖥Pc
+
+-🍎ios
+
+-📱android
+
+# **⭐Créditos**
+
+**👥Criadores:**
+davidgames3d e menkato
+
+**👨‍🎨Interface ui:**
+davidgames3d e menkato
+
+**👨‍💻código:**
+davidgames3d e menkato 
 
 ©2026 lib Davidgames3d e menkato©
 
-# ⭐Créditos
-
-👥Criadores:
-davidgames3d e menkato
-
-👨‍🎨Interface ui: davidgames3d e menkato
-
-👨‍💻código: 
-davidgames3d e menkato 
-
-# redes sociais
+# **redes sociais**
 
 ↓server do discord
 
@@ -236,3 +265,5 @@ https://youtube.com/@davidgames3d?si=R4MwBkructNM3W01
 
 menakto♠
 https://youtube.com/@menkato?si=inY_MfQCb__-tnEo
+
+©2026 lib Davidgames3d e menkato©
