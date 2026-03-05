@@ -190,6 +190,129 @@ local function MakeDraggable(handle, frame)
     end)
 end
 
+function Library:MakeDialog(config)
+	config = config or {}
+	local Title   = config.Title   or "Aviso"
+	local Text    = config.Text    or ""
+	local Buttons = config.Buttons or {{Text = "OK", Callback = function() end}}
+
+	local ScreenGui = Instance.new("ScreenGui")
+	ScreenGui.Name            = "NexusDialog"
+	ScreenGui.ZIndexBehavior  = Enum.ZIndexBehavior.Sibling
+	ScreenGui.ResetOnSpawn    = false
+	ScreenGui.IgnoreGuiInset  = true
+	pcall(function() ScreenGui.Parent = game:GetService("CoreGui") end)
+	if not ScreenGui.Parent then
+		ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+	end
+
+	local Blur = Instance.new("Frame", ScreenGui)
+	Blur.Size             = UDim2.new(1,0,1,0)
+	Blur.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	Blur.BackgroundTransparency = 0.5
+	Blur.BorderSizePixel  = 0
+	Blur.ZIndex           = 1
+
+	local btnCount = #Buttons
+	local dialogH  = 140 + (btnCount > 2 and (btnCount-2)*44 or 0)
+
+	local Card = Instance.new("Frame", ScreenGui)
+	Card.Size             = UDim2.new(0,360,0,dialogH)
+	Card.AnchorPoint      = Vector2.new(0.5,0.5)
+	Card.Position         = UDim2.new(0.5,0,0.4,0)
+	Card.BackgroundColor3 = Color3.fromRGB(18,18,26)
+	Card.BorderSizePixel  = 0
+	Card.ZIndex           = 2
+	local cc = Instance.new("UICorner", Card)
+	cc.CornerRadius = UDim.new(0,14)
+	local cs = Instance.new("UIStroke", Card)
+	cs.Color     = Color3.fromRGB(60,60,90)
+	cs.Thickness = 1.5
+
+	Card.Position = UDim2.new(0.5,0,0.6,0)
+	Card.BackgroundTransparency = 1
+	TweenService:Create(Card, TweenInfo.new(0.25, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+		Position = UDim2.new(0.5,0,0.5,0),
+		BackgroundTransparency = 0,
+	}):Play()
+
+	local TitleLbl = Instance.new("TextLabel", Card)
+	TitleLbl.Size                  = UDim2.new(1,-24,0,36)
+	TitleLbl.Position              = UDim2.new(0,12,0,12)
+	TitleLbl.BackgroundTransparency = 1
+	TitleLbl.Text                  = Title
+	TitleLbl.TextColor3            = Color3.new(1,1,1)
+	TitleLbl.TextSize              = 17
+	TitleLbl.Font                  = Enum.Font.GothamBold
+	TitleLbl.TextXAlignment        = Enum.TextXAlignment.Left
+	TitleLbl.ZIndex                = 3
+
+	local Divider = Instance.new("Frame", Card)
+	Divider.Size             = UDim2.new(1,-24,0,1)
+	Divider.Position         = UDim2.new(0,12,0,50)
+	Divider.BackgroundColor3 = Color3.fromRGB(50,50,75)
+	Divider.BorderSizePixel  = 0
+	Divider.ZIndex           = 3
+
+	local TextLbl = Instance.new("TextLabel", Card)
+	TextLbl.Size                  = UDim2.new(1,-24,0,50)
+	TextLbl.Position              = UDim2.new(0,12,0,58)
+	TextLbl.BackgroundTransparency = 1
+	TextLbl.Text                  = Text
+	TextLbl.TextColor3            = Color3.fromRGB(180,180,200)
+	TextLbl.TextSize              = 13
+	TextLbl.Font                  = Enum.Font.Gotham
+	TextLbl.TextXAlignment        = Enum.TextXAlignment.Left
+	TextLbl.TextWrapped           = true
+	TextLbl.ZIndex                = 3
+
+	local btnY = 116
+	for i, btnData in ipairs(Buttons) do
+		local isPrimary = i == 1
+		local Btn = Instance.new("TextButton", Card)
+		Btn.Size             = UDim2.new(1/math.min(btnCount,2) - 0.04, 0, 0, 36)
+		Btn.Position         = UDim2.new(
+			(i <= 2) and ((i-1) * (1/math.min(btnCount,2))) + 0.02 or 0.02,
+			0,
+			0,
+			(i <= 2) and btnY or btnY + math.ceil((i-2)) * 44
+		)
+		Btn.BackgroundColor3 = isPrimary and Color3.fromRGB(100,80,255) or Color3.fromRGB(35,35,50)
+		Btn.Text             = btnData.Text or "Botão"
+		Btn.TextColor3       = Color3.new(1,1,1)
+		Btn.TextSize         = 13
+		Btn.Font             = Enum.Font.GothamSemibold
+		Btn.BorderSizePixel  = 0
+		Btn.ZIndex           = 3
+		local bc = Instance.new("UICorner", Btn)
+		bc.CornerRadius = UDim.new(0,8)
+
+		Btn.MouseEnter:Connect(function()
+			TweenService:Create(Btn, TweenInfo.new(0.12), {
+				BackgroundColor3 = isPrimary and Color3.fromRGB(120,100,255) or Color3.fromRGB(50,50,70)
+			}):Play()
+		end)
+		Btn.MouseLeave:Connect(function()
+			TweenService:Create(Btn, TweenInfo.new(0.12), {
+				BackgroundColor3 = isPrimary and Color3.fromRGB(100,80,255) or Color3.fromRGB(35,35,50)
+			}):Play()
+		end)
+		Btn.MouseButton1Click:Connect(function()
+			TweenService:Create(Card, TweenInfo.new(0.2, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+				Position = UDim2.new(0.5,0,0.6,0),
+				BackgroundTransparency = 1,
+			}):Play()
+			TweenService:Create(Blur, TweenInfo.new(0.2), {BackgroundTransparency = 1}):Play()
+			task.delay(0.22, function()
+				ScreenGui:Destroy()
+			end)
+			if btnData.Callback then
+				btnData.Callback()
+			end
+		end)
+	end
+end
+
 -- ── MakeWindow ────────────────────────────────────
 function Library:MakeWindow(config)
     config = config or {}
@@ -623,6 +746,50 @@ end
             function obj:Get() return state end
             return obj
         end
+
+function TabFunctions:MakeImage(imgConfig)
+	imgConfig = imgConfig or {}
+	local ImageId = imgConfig.Image   or ""
+	local Width   = imgConfig.Width   or 1
+	local Height  = imgConfig.Height  or 120
+	local Desc    = imgConfig.Desc    or ""
+
+	local Container = Instance.new("Frame", Page)
+	Container.Size             = UDim2.new(1,-4,0, Desc~="" and Height+24 or Height)
+	Container.BackgroundColor3 = T.Element
+	Container.BorderSizePixel  = 0
+	local cr = Instance.new("UICorner", Container)
+	cr.CornerRadius = UDim.new(0,8)
+	local cs = Instance.new("UIStroke", Container)
+	cs.Color = T.Border cs.Thickness = 1
+
+	local Img = Instance.new("ImageLabel", Container)
+	Img.Size                  = UDim2.new(Width,0,0,Height)
+	Img.AnchorPoint           = Vector2.new(0.5,0)
+	Img.Position              = UDim2.new(0.5,0,0,0)
+	Img.BackgroundTransparency = 1
+	Img.Image                 = ImageId
+	Img.ScaleType             = Enum.ScaleType.Fit
+	local ic = Instance.new("UICorner", Img)
+	ic.CornerRadius = UDim.new(0,8)
+
+	if Desc ~= "" then
+		local DescLbl = Instance.new("TextLabel", Container)
+		DescLbl.Size                  = UDim2.new(1,-16,0,20)
+		DescLbl.Position              = UDim2.new(0,8,0,Height+2)
+		DescLbl.BackgroundTransparency = 1
+		DescLbl.Text                  = Desc
+		DescLbl.TextColor3            = T.SubText
+		DescLbl.TextSize              = 11
+		DescLbl.Font                  = Enum.Font.Gotham
+		DescLbl.TextXAlignment        = Enum.TextXAlignment.Center
+	end
+
+	local obj = {}
+	function obj:Set(id) Img.Image = id end
+	function obj:Get() return Img.Image end
+	return obj
+end
 
         -- ─── Slider ───
         function TabFunctions:MakeSlider(sConfig)
