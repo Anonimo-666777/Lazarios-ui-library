@@ -53,7 +53,23 @@ Tab1:MakeButton({
 })
 ```
 
-troque name para o nome que quer e substitua print pela função que quer
+troque name para o nome que quer e substitua print pela função que quer 
+
+##  slider
+
+```lua
+Tab1:MakeSlider({
+	Name = "Velocidade",
+	Min = 0,
+	Max = 500,
+	Default = 16,
+	Suffix = " sp",
+	Callback = function(value)
+		print("Velocidade:", value)
+	end,
+})
+```
+mude name para o nome que quer e mude o default, min, max e etc do jeito que quiser e bote a função no lugar do print
 
 ## toggle
 
@@ -67,7 +83,78 @@ Tab1:MakeToggle({
 })
 ```
 
-mude name para o nome que que
+mude name para o nome que quer e substitua o print pela função que quer
+
+## dropdown
+
+```lua
+Tab1:MakeDropdown({
+	Name = "Time",
+	Options = {"Azul", "Vermelho", "Verde"},
+	Default = "Azul",
+	Callback = function(selected)
+		print("Time:", selected)
+	end,
+})
+```
+
+mude name para o nome e bote as opções que quer em options e mude default e função para o que quiser
+
+## Input
+
+```lua
+Tab1:MakeInput({
+	Name = "Nome",
+	Placeholder = "Digite o nome...",
+	Callback = function(text, enter)
+		print("Nome:", text)
+	end,
+})
+```
+mude nome tab e etc para o que quiser
+
+##  label
+
+```lua
+Tab1:MakeLabel("NexusUI v1.0 carregado!")
+```
+
+acho que você já aprendeu né? 
+
+## ColorPinker
+
+```lua
+Tab2:MakeColorPicker({
+	Name = "Cor do ESP",
+	Default = Color3.fromRGB(255, 100, 100),
+	Callback = function(color)
+		print("Cor:", color)
+	end,
+})
+```
+
+## KeyBird(pra pc) 
+
+```lua
+Tab2:MakeKeybind({
+	Name = "Fly",
+	Default = Enum.KeyCode.F,
+	Callback = function()
+		print("Fly pressionado")
+	end,
+})
+```
+
+## notificação
+
+```lua
+Win:Notify({
+	Title = "Carregado!",
+	Content = "Hub iniciado com sucesso.",
+	Duration = 4,
+	Type = "Success",
+})
+```
 
 # 📄Info
 
@@ -97,6 +184,18 @@ davidgames3d e menkato
 
 ↓server do discord
 
+david server🐺
+https://discord.gg/mQ3Y4fyaU
+
 ↓grupos WhatsApp↓
 
+menkato WhatsApp🖤
+https://chat.whatsapp.com/LKW3izEhNT88oIZNX37hhJ
+
 ↓canais do YouTube↓
+
+davidgames3d🐺
+https://youtube.com/@davidgames3d?si=R4MwBkructNM3W01
+
+menakto♠
+https://youtube.com/@menkato?si=inY_MfQCb__-tnEo
