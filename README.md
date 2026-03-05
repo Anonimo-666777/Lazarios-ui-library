@@ -29,6 +29,14 @@ sem foto ainda em teste beta
 
 sem foto ainda em teste beta
 
+## DarkRed
+
+sem foto ainda em teste beta
+
+## Purple
+
+sem foto ainda em teste beta
+
 # ❓como usar
 
 ## Loader
@@ -183,7 +191,7 @@ Win:Notify({
 
 # 📄Info
 
-VERSÃO: V1.0.1 stable
+VERSÃO: V1.0.2 stable
 
 📱Compatibilidade:
 
