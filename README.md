@@ -121,7 +121,7 @@ Tab1:MakeLabel("NexusUI v1.0 carregado!")
 
 acho que você já aprendeu né? 
 
-## ColorPinker
+## ColorPicker
 
 ```lua
 Tab2:MakeColorPicker({
@@ -133,7 +133,7 @@ Tab2:MakeColorPicker({
 })
 ```
 
-## KeyBird(pra pc) 
+## KeyBind(pra pc) 
 
 ```lua
 Tab2:MakeKeybind({
@@ -158,15 +158,16 @@ Win:Notify({
 
 # 📄Info
 
-VERSÃO:v0.0.1
+VERSÃO: V1.0.0 stable
 
 📱Compatibilidade:
 
-💻🖥Pc
+🖥Pc
 
-🍎📱ios
+🍎ios
 
 📱android
+
 
 ©2026 lib Davidgames3d e menkato©
 
@@ -187,12 +188,12 @@ davidgames3d e menkato
 david server🐺
 https://discord.gg/mQ3Y4fyaU
 
-↓grupos WhatsApp↓
+↓grupos WhatsApp
 
 menkato WhatsApp🖤
 https://chat.whatsapp.com/LKW3izEhNT88oIZNX37hhJ
 
-↓canais do YouTube↓
+↓canais do YouTube
 
 davidgames3d🐺
 https://youtube.com/@davidgames3d?si=R4MwBkructNM3W01
