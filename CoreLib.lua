@@ -1,6 +1,6 @@
 -- ================================================
 --         Lazarus Library - by davidgames3d and menkayto
---         Versão: 1.0.4 beta | Luau | Roblox
+--         Versão: 1.0.2 | Luau | Roblox
 -- ================================================
 -- Uso via loadstring:
 --   local NexusUI = loadstring(game:HttpGet("SUA_URL"))()
@@ -400,18 +400,14 @@ end
         local TabIcon  = tabConfig.Icon   or ""  -- ImageId
 
         -- Botão da tab
-        local BtnIcon
-if TabIcon ~= "" then
-    BtnIcon = Instance.new("ImageLabel", TabBtn)
-    BtnIcon.Size                   = UDim2.new(0, 16, 0, 16)
-    BtnIcon.Position               = UDim2.new(0, 8, 0.5, -8)
-    BtnIcon.BackgroundTransparency = 1
-    BtnIcon.Image                  = TabIcon
-    BtnIcon.ImageColor3            = T.SubText
-    BtnIcon.ZIndex                 = 2
-    TabBtn.Text                    = "    " .. TabName
-    TabBtn.TextXAlignment          = Enum.TextXAlignment.Left
-end
+        local TabBtn = Instance.new("TextButton", TabList)
+        TabBtn.Size              = UDim2.new(1,0,0,34)
+        TabBtn.BackgroundColor3  = T.Element
+        TabBtn.Text              = TabIcon=="" and TabName or "  "..TabName
+        TabBtn.TextColor3        = T.SubText
+        TabBtn.TextSize          = 12
+        TabBtn.Font              = Enum.Font.GothamSemibold
+        TabBtn.TextXAlignment    = Enum.TextXAlignment.Left
         TabBtn.BorderSizePixel   = 0
         Corner(TabBtn,6)
         Padding(TabBtn,0,0,TabIcon~=""and 32 or 8,6)
