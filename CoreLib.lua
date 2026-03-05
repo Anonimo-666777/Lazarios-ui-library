@@ -1,6 +1,6 @@
 -- ================================================
 --         Lazarus Library - by davidgames3d and menkayto
---         Versão: 1.0.0 | Luau | Roblox
+--         Versão: 1.0.2 | Luau | Roblox
 -- ================================================
 -- Uso via loadstring:
 --   local NexusUI = loadstring(game:HttpGet("SUA_URL"))()
