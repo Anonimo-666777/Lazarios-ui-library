@@ -416,7 +416,7 @@ end
         if TabIcon ~= "" then
             BtnIcon = Instance.new("ImageLabel", TabBtn)
             BtnIcon.Size                  = UDim2.new(0,18,0,18)
-            BtnIcon.Position              = UDim2.new(0,8,0.5,-9)
+            BtnIcon.Position = UDim2.new(0, 5, 0.5, -9)
             BtnIcon.BackgroundTransparency= 1
             BtnIcon.Image                 = TabIcon
             BtnIcon.ImageColor3           = T.SubText
