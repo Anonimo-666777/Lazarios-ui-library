@@ -1,5 +1,7 @@
 # **Lazarus Lib Ui**
 
+![Lazarios UI](https://shields.io)
+
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
 # **temas da lib**
