@@ -21,6 +21,13 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212611.png" alt="Texto Alternativo">
 
+## Red
+
+sem foto ainda em teste beta
+
+## Blue
+
+sem foto ainda em teste beta
 
 # ❓como usar
 
@@ -176,7 +183,7 @@ Win:Notify({
 
 # 📄Info
 
-VERSÃO: V1.0.0 stable
+VERSÃO: V1.0.1 stable
 
 📱Compatibilidade:
 
