@@ -19,7 +19,7 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 ## Red
 
-<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-195057.png">
+<img src="https://github.com/Anonimo-666777/Lazariod-ui-library/blob/main/Screenshot_20260305-195057.png" alt="texto">
 
 ## Blue
 
