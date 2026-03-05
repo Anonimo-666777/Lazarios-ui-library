@@ -52,6 +52,7 @@ local Win = NexusUI:MakeWindow({
     Title = "Meu Hub",
     Theme = "Dark",
     RGBBorder = false,
+    LogoId    = "rbxassetid://123456", 
 }) 
 ```
 
