@@ -34,11 +34,9 @@ local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anoni
 
 ```lua
 local Win = NexusUI:MakeWindow({
-	Title = "Meu Hub",
-	SubTitle = "v1.0",
-	Theme = "Dark",
-	ToggleKey = Enum.KeyCode.RightShift,
-})
+    Title = "Meu Hub",
+    Theme = "Dark",
+    RGBBorder = false,
 ```
 
 troque tema,título,subtítulo e toggleKey
