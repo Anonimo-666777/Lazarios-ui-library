@@ -23,7 +23,7 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 ## Blue
 
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png"
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png">
 
 ## DarkRed
 
