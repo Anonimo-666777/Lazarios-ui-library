@@ -1,6 +1,6 @@
 -- ================================================
 --         Lazarus Library - by davidgames3d and menkayto
---         Versão: 1.0.1 | Luau | Roblox
+--         Versão: 1.0.0 | Luau | Roblox
 -- ================================================
 -- Uso via loadstring:
 --   local NexusUI = loadstring(game:HttpGet("SUA_URL"))()
@@ -91,6 +91,36 @@ local Themes = {
         Toggle_Off   = Color3.fromRGB(33, 84, 185),
         TopBar       = Color3.fromRGB(51, 88, 130),
     },
+    Purple = {
+        Background   = Color3.fromRGB(17, 17, 17),
+        Secondary    = Color3.fromRGB(98, 37, 209),
+        Accent       = Color3.fromRGB(205, 98, 152),
+        AccentHover  = Color3.fromRGB(98, 37, 209),
+        Text         = Color3.fromRGB(242, 243, 243),
+        SubText      = Color3.fromRGB(242, 243, 243),
+        Element      = Color3.fromRGB(205, 205, 205),
+        ElementHover = Color3.fromRGB(98, 37, 209),
+        Border       = Color3.fromRGB(98, 37, 209),
+        SliderFill   = Color3.fromRGB(98, 37, 209),
+        Toggle_On    = Color3.fromRGB(98, 37, 209),
+        Toggle_Off   = Color3.fromRGB(205, 205, 205),
+        TopBar       = Color3.fromRGB(98, 37, 209),
+    },
+    DarkRed = {
+        Background   = Color3.fromRGB(17, 17, 17),
+        Secondary    = Color3.fromRGB(196, 40, 28),
+        Accent       = Color3.fromRGB(27, 42, 53),
+        AccentHover  = Color3.fromRGB(196, 40, 28),
+        Text         = Color3.fromRGB(242, 243, 243),
+        SubText      = Color3.fromRGB(237, 234, 234),
+        Element      = Color3.fromRGB(27, 42, 53),
+        ElementHover = Color3.fromRGB(196, 40, 28),
+        Border       = Color3.fromRGB(255, 0, 0),
+        SliderFill   = Color3.fromRGB(255, 0, 0),
+        Toggle_On    = Color3.fromRGB(255, 0, 0),
+        Toggle_Off   = Color3.fromRGB(27, 42, 53),
+        TopBar       = Color3.fromRGB(255, 0, 0),
+    }, 
 }
 
 -- ── Utilidades ───────────────────────────────────
