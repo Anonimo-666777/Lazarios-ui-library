@@ -1,6 +1,10 @@
 # **Lazarus Lib Ui**
 
-![Lazarios UI](https://shields.io)
+<p align="center">
+  <a href="URL_DO_SEU_LINK_AQUI">
+    <img src="LINK_DA_SUA_IMAGEM_AQUI" alt="Nome da Badge" height="30px">
+  </a>
+</p>
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
