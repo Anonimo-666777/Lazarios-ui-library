@@ -8,9 +8,9 @@
 
 **o que nossa Library tem**
 
-- rápido
+- rápidez
 
-- fácil
+- facilidade
 
 - personalizável
 
