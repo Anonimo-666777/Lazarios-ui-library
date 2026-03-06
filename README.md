@@ -15,7 +15,7 @@
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
 <p align="center">
-  <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#info">
+  <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#Creditos">
     <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260306123941.png" alt="Versão da lib" height="90px">
   </a>
 </p>
