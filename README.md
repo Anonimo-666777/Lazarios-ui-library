@@ -8,6 +8,11 @@
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
+# **Demonstração da lib**
+
+<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/YouCut_20260305_222030997-ezgif.com-video-to-gif-converter.gif" width="500" height="auto">
+
+
 # **temas da lib**
 
 ## light
