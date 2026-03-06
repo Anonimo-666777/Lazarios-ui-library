@@ -6,6 +6,14 @@
   </a>
 </p>
 
+**o que nossa Library tem**
+
+*rápido
+*fácil
+*personalizável
+*bonita
+*poderosa
+
 <p align="center">
   <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#info">
     <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214507.png" alt="Versão da lib" height="90px">
