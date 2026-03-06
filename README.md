@@ -8,15 +8,15 @@
 
 **o que nossa Library tem**
 
-*rápido
+- rápido
 
-*fácil
+- fácil
 
-*personalizável
+- personalizável
 
-*bonita
+- bonita
 
-*poderosa
+- poderosa
 
 <p align="center">
   <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#info">
