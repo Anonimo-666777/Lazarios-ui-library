@@ -91,6 +91,20 @@ local Win = NexusUI:MakeWindow({
 troque tema,título,subtítulo e toggleKey
 Nota:ToggleKey é para pc
 
+## **Opacidade e tamanho da window**
+
+## Tamanho
+
+```lua
+Win:SetSize(600) 
+```
+
+## opacidade
+
+```lua
+Win:SetOpacity(0.8)
+```
+
 ## 📂tab
 
 ```lua
