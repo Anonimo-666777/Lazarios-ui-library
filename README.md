@@ -8,52 +8,54 @@
 
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
-# **Demonstração da lib**
+# 📷**Demonstração da lib**
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/YouCut_20260305_222030997-ezgif.com-video-to-gif-converter.gif" width="500" height="auto">
 
 
 # **temas da lib**
 
-## light
+## light🤍
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212548.png" alt="Texto Alternativo">
 
-não gosta de escuridão não faz mau tem o light
+🤍não gosta de escuridão não faz mau tem o light🖤
 
-## Dark 
+## Dark🖤
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" alt="Texto Alternativo">
 
-tema padrão
+🐺tema padrão🖤🤍
 
-## Neon
+## Neon💠
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212611.png" alt="Texto Alternativo">
 
-talvez o mais bonito na opinião do David
+talvez o mais bonito na opinião do David🤩👨‍💻
 
-## Red
+## Red❤
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-195057.png" alt="texto">
 
-melhor do que o DarkRed
+melhor do que o DarkRed⭐
 
-## Blue
+## Blue🩵
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png">
 
-texto branco e fundo claro não dá mas saiba todos os temas serão atualizados numa update futura
+texto branco e fundo claro não dá mas saiba todos os temas serão atualizados numa update futura👨‍💻
 
-## DarkRed
+## DarkRed❤🖤
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png">
 
-até que legal mas precisa de ajustes e mudanças de cores e etc nesse tema
+até que legal mas precisa de ajustes e mudanças de cores e etc nesse tema👀
 
-## Purple
+## Purple💜
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png">
+
+pensei que daria certo o purple mas acredite a cada update melhoramos os temas, interface e funções🔥
 
 # **❓como usar**
 
