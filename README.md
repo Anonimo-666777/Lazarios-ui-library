@@ -249,18 +249,6 @@ Tab1:MakeImage({
 })
 ```
 
-# **📄Info**
-
-**VERSÃO: V1.0.4 Beta**
-
-**📱Compatibilidade:**
-
-- 🖥Pc
-
-- 🍎ios
-
-- 📱android
-
 # **⭐Créditos**
 
 **👥Criadores:**
