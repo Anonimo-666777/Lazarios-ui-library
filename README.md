@@ -37,49 +37,15 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/YouCut_20260305_222030997-ezgif.com-video-to-gif-converter.gif" width="500" height="auto">
 
 
-# **temas da lib**
+## 🎨 Temas Disponíveis
 
-## light🤍
+| Dark (Padrão) | Light | Neon |
+| :---: | :---: | :---: |
+| <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" width="200"> | <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212548.png" width="200"> | <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212611.png" width="200"> |
+| **Red** | **Blue** | **Purple** |
+| <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-195057.png" width="200"> | <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png" width="200"> | <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png" width="200"> |
 
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212548.png" alt="Texto Alternativo">
-
-🤍não gosta de escuridão não faz mau tem o light🖤
-
-## Dark🖤
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" alt="Texto Alternativo">
-
-🐺tema padrão🖤🤍
-
-## Neon💠
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212611.png" alt="Texto Alternativo">
-
-talvez o mais bonito na opinião do David🤩👨‍💻
-
-## Red❤
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-195057.png" alt="texto">
-
-melhor do que o DarkRed⭐
-
-## Blue🩵
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png">
-
-texto branco e fundo claro não dá mas saiba todos os temas serão atualizados numa update futura👨‍💻
-
-## DarkRed❤🖤
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png">
-
-até que legal mas precisa de ajustes e mudanças de cores e etc nesse tema👀
-
-## Purple💜
-
-<img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png">
-
-pensei que daria certo o purple mas acredite a cada update melhoramos os temas, interface e funções🔥
+---
 
 # **❓como usar**
 
