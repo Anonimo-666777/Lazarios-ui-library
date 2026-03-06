@@ -6,17 +6,9 @@
   </a>
 </p>
 
-**o que nossa Library tem**
+> Uma biblioteca de interface poderosa, rápida e totalmente personalizável para seus scripts.
 
-- rápidez
-
-- facilidade
-
-- personalizável
-
-- bonita
-
-- poderosa
+---
 
 <p align="center">
   <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#info">
