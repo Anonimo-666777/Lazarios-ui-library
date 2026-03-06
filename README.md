@@ -6,24 +6,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://youtube.com/@davidgames3d?si=TFaUVbvejRl4t80J">
-    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214454.png" alt="Nome da Badge" height="90px">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://youtube.com/@menkato?si=JvjCUxvzoKWOczlX">
-    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214455.png" alt="Nome da Badge" height="90px">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/ZVHsuCM5v">
-    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214452.png" alt="Nome da Badge" height="90px">
-  </a>
-</p>
-
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
 # **temas da lib**
@@ -272,22 +254,22 @@ davidgames3d e menkato
 
 # **redes sociais**
 
-↓server do discord
+<p align="center">
+  <a href="https://youtube.com/@davidgames3d?si=TFaUVbvejRl4t80J">
+    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214454.png" alt="Nome da Badge" height="90px">
+  </a>
+</p>
 
-david server🐺
-https://discord.gg/mQ3Y4fyaU
+<p align="center">
+  <a href="https://youtube.com/@menkato?si=JvjCUxvzoKWOczlX">
+    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214455.png" alt="Nome da Badge" height="90px">
+  </a>
+</p>
 
-↓grupos WhatsApp
-
-menkato WhatsApp🖤
-https://chat.whatsapp.com/LKW3izEhNT88oIZNX37hhJ
-
-↓canais do YouTube
-
-davidgames3d🐺
-https://youtube.com/@davidgames3d?si=R4MwBkructNM3W01
-
-menakto♠
-https://youtube.com/@menkato?si=inY_MfQCb__-tnEo
+<p align="center">
+  <a href="https://discord.gg/ZVHsuCM5v">
+    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214452.png" alt="Nome da Badge" height="90px">
+  </a>
+</p>
 
 ©2026 lib Davidgames3d e menkato©
