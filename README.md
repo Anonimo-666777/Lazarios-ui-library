@@ -19,14 +19,19 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212548.png" alt="Texto Alternativo">
 
+não gosta de escuridão não faz mau tem o light
 
 ## Dark 
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-195001.png" alt="Texto Alternativo">
 
+tema padrão
+
 ## Neon
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260304-212611.png" alt="Texto Alternativo">
+
+talvez o mais bonito na opinião do David
 
 ## Red
 
