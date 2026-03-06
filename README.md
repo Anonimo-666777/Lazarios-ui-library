@@ -37,6 +37,8 @@ talvez o mais bonito na opinião do David
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-195057.png" alt="texto">
 
+melhor do que o DarkRed
+
 ## Blue
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png">
