@@ -12,7 +12,7 @@
   </a>
 </p>
 
-<p align="right">
+<p align="left">
   <a href="URL_DO_SEU_LINK_AQUI">
     <img src="LINK_DA_SUA_IMAGEM_AQUI" alt="Nome da Badge" height="30px">
   </a>
