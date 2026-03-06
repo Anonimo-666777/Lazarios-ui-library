@@ -96,13 +96,13 @@ Nota:ToggleKey é para pc
 ## Tamanho
 
 ```lua
-Win:SetSize(600) 
+Win:SetSize(480) 
 ```
 
 ## opacidade
 
 ```lua
-Win:SetOpacity(0.8)
+Win:SetOpacity(0)
 ```
 
 ## 📂tab
