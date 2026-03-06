@@ -43,6 +43,8 @@ melhor do que o DarkRed
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194912.png">
 
+texto branco e fundo claro não dá mas saiba todos os temas serão atualizados numa update futura
+
 ## DarkRed
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png">
