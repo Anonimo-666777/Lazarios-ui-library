@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="URL_DO_SEU_LINK_AQUI">
+  <a href="https://youtube.com/@davidgames3d?si=TFaUVbvejRl4t80J">
     <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214454.png" alt="Nome da Badge" height="90px">
   </a>
 </p>
