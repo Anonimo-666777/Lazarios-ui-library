@@ -9,9 +9,13 @@
 **o que nossa Library tem**
 
 *rápido
+
 *fácil
+
 *personalizável
+
 *bonita
+
 *poderosa
 
 <p align="center">
