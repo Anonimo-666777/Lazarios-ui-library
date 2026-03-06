@@ -260,8 +260,6 @@ davidgames3d e menkato
 **👨‍💻código:**
 davidgames3d e menkato 
 
-©2026 lib Davidgames3d e menkato©
-
 # **redes sociais**
 
 <p align="center">
