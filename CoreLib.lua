@@ -1370,6 +1370,32 @@ end
         return TabFunctions
     end
 
+    -- ── Opacidade e size ──────────────────────────────
+function WindowObj:SetOpacity(value)
+	value = math.clamp(value, 0, 1)
+	TweenService:Create(MainFrame, TweenInfo.new(0.3), {
+		BackgroundTransparency = value,
+	}):Play()
+	for _, obj in ipairs(MainFrame:GetDescendants()) do
+		if obj:IsA("Frame") or obj:IsA("ScrollingFrame") then
+			if obj.BackgroundTransparency < 1 then
+				TweenService:Create(obj, TweenInfo.new(0.3), {
+					BackgroundTransparency = math.clamp(obj.BackgroundTransparency + value * 0.6, 0, 0.99),
+				}):Play()
+			end
+		end
+	end
+end
+
+function WindowObj:SetSize(width, height)
+	width  = math.clamp(width  or Size.Width,  280, 800)
+	height = math.clamp(height or Size.Height, 200, 600)
+	Size   = {Width = width, Height = height}
+	TweenService:Create(MainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+		Size = UDim2.new(0, width, 0, height),
+	}):Play()
+end
+
     -- ── Notificação ──────────────────────────────
     function WindowObj:Notify(nConfig)
         nConfig = nConfig or {}
