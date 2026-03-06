@@ -65,7 +65,7 @@ pensei que daria certo o purple mas acredite a cada update melhoramos os temas, 
 local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anonimo-666777/Lazarios-ui-library/main/CoreLib.lua"))()
 ```
 
-## Window
+## 🖼Window
 
 ```lua
 local Win = NexusUI:MakeWindow({
@@ -79,7 +79,7 @@ local Win = NexusUI:MakeWindow({
 troque tema,título,subtítulo e toggleKey
 Nota:ToggleKey é para pc
 
-## tab
+## 📂tab
 
 ```lua
 local Tab1 = Win:MakeTab({
@@ -90,7 +90,7 @@ local Tab1 = Win:MakeTab({
 
 troque name e tab1 bote tab2, tab3 e etc e o name você muda para o que quiser
 
-## Section
+## 〰️Section
 
 ```lua
 Tab1:MakeSection("Geral")
@@ -98,7 +98,7 @@ Tab1:MakeSection("Geral")
 
 troque Tab1 para tab que quer isso vale para botões, sections, slide rs e etc que tiver dentro da tab e troque o "geral" para o que quiser entre os " "
 
-## button
+## 🔘button
 
 ```lua
 Tab1:MakeButton({
@@ -111,7 +111,7 @@ Tab1:MakeButton({
 
 troque name para o nome que quer e substitua print pela função que quer 
 
-##  slider
+##  🎚slider
 
 ```lua
 Tab1:MakeSlider({
@@ -127,7 +127,7 @@ Tab1:MakeSlider({
 ```
 mude name para o nome que quer e mude o default, min, max e etc do jeito que quiser e bote a função no lugar do print
 
-## toggle
+## 🎛toggle
 
 ```lua
 Tab1:MakeToggle({
@@ -141,7 +141,7 @@ Tab1:MakeToggle({
 
 mude name para o nome que quer e substitua o print pela função que quer
 
-## dropdown
+## 📜dropdown
 
 ```lua
 Tab1:MakeDropdown({
@@ -156,7 +156,7 @@ Tab1:MakeDropdown({
 
 mude name para o nome e bote as opções que quer em options e mude default e função para o que quiser
 
-## Input
+## 📝Input
 
 ```lua
 Tab1:MakeInput({
@@ -169,7 +169,7 @@ Tab1:MakeInput({
 ```
 mude nome tab e etc para o que quiser
 
-##  label
+##  🔤label
 
 ```lua
 Tab1:MakeLabel("NexusUI v1.0 carregado!")
@@ -177,7 +177,7 @@ Tab1:MakeLabel("NexusUI v1.0 carregado!")
 
 acho que você já aprendeu né? 
 
-## ColorPicker
+## 🌈ColorPicker
 
 ```lua
 Tab2:MakeColorPicker({
@@ -189,7 +189,7 @@ Tab2:MakeColorPicker({
 })
 ```
 
-## KeyBind(pra pc) 
+## 🔑KeyBind(pra pc) 
 
 ```lua
 Tab2:MakeKeybind({
@@ -201,7 +201,7 @@ Tab2:MakeKeybind({
 })
 ```
 
-## notificação
+## 🔔notificação
 
 ```lua
 Win:Notify({
@@ -212,7 +212,7 @@ Win:Notify({
 })
 ```
 
-## Dialog 
+## 💬Dialog 
 
 ```lua
 NexusUI:MakeDialog({
@@ -231,11 +231,11 @@ Nota: dá para botar quanto quiser com essa parte aqui
 {Text = "Texto",  Callback = function() print("print ou substitua esse print por uma função") end},
 ```
 
-**como o dialog é?** 
+💬📷**como o dialog é?** 
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194325.png">
 
-## Image Label
+## 📸🔤Image Label
 
 ```lua
 Tab1:MakeImage({
@@ -251,11 +251,11 @@ Tab1:MakeImage({
 
 **📱Compatibilidade:**
 
--🖥Pc
+-*🖥Pc
 
--🍎ios
+-*🍎ios
 
--📱android
+-*📱android
 
 # **⭐Créditos**
 
