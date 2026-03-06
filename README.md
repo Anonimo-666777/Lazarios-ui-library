@@ -251,11 +251,11 @@ Tab1:MakeImage({
 
 **📱Compatibilidade:**
 
--*🖥Pc
+- 🖥Pc
 
--*🍎ios
+- 🍎ios
 
--*📱android
+- 📱android
 
 # **⭐Créditos**
 
