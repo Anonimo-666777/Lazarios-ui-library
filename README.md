@@ -49,6 +49,8 @@ texto branco e fundo claro não dá mas saiba todos os temas serão atualizados 
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194844.png">
 
+até que legal mas precisa de ajustes e mudanças de cores e etc nesse tema
+
 ## Purple
 
 <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/Screenshot_20260305-194818.png">
