@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/readme.md">
-    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1737%20Sem%20T%C3%ADtulo_20260306125304.png" alt="Versão da lib" height="90px">
+    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1737%20Sem%20T%C3%ADtulo_20260306125304.png" alt="Versão da lib" height="100px">
   </a>
 </p>
 
