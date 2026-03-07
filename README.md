@@ -57,6 +57,7 @@ local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anoni
 
 ## KeySystem
 
+```lua
 NexusUI:MakeKeySystem({
     Title    = "David Hub",
     SubTitle = "Entre no nosso Discord para obter a key!",
@@ -73,6 +74,7 @@ NexusUI:MakeKeySystem({
         print("Key incorreta, saindo...")
     end,
 })
+```
 
 bote a quantidade de key que quiser
 
