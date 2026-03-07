@@ -313,6 +313,257 @@ function Library:MakeDialog(config)
 	end
 end
 
+function Library:MakeKeySystem(config)
+	config = config or {}
+	local Title    = config.Title    or "Key System"
+	local SubTitle = config.SubTitle or "Digite a key para continuar"
+	local Site     = config.Site     or ""
+	local OnSuccess = config.OnSuccess or function() end
+	local OnFail    = config.OnFail    or function() end
+
+	local validKeys = {}
+	for k, v in pairs(config) do
+		if string.sub(k, 1, 3) == "Key" then
+			table.insert(validKeys, tostring(v))
+		end
+	end
+
+	local ScreenGui = Instance.new("ScreenGui")
+	ScreenGui.Name            = "NexusKeySystem"
+	ScreenGui.ZIndexBehavior  = Enum.ZIndexBehavior.Sibling
+	ScreenGui.ResetOnSpawn    = false
+	ScreenGui.IgnoreGuiInset  = true
+	pcall(function() ScreenGui.Parent = game:GetService("CoreGui") end)
+	if not ScreenGui.Parent then
+		ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+	end
+
+	local Bg = Instance.new("Frame", ScreenGui)
+	Bg.Size                  = UDim2.new(1,0,1,0)
+	Bg.BackgroundColor3      = Color3.fromRGB(0,0,0)
+	Bg.BackgroundTransparency = 0.45
+	Bg.BorderSizePixel       = 0
+
+	local Card = Instance.new("Frame", ScreenGui)
+	Card.Size             = UDim2.new(0,380,0,260)
+	Card.AnchorPoint      = Vector2.new(0.5,0.5)
+	Card.Position         = UDim2.new(0.5,0,0.6,0)
+	Card.BackgroundColor3 = Color3.fromRGB(14,14,20)
+	Card.BackgroundTransparency = 1
+	Card.BorderSizePixel  = 0
+	local cc = Instance.new("UICorner", Card)
+	cc.CornerRadius = UDim.new(0,16)
+	local cs = Instance.new("UIStroke", Card)
+	cs.Color     = Color3.fromRGB(100,80,255)
+	cs.Thickness = 1.5
+
+	TweenService:Create(Card, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+		Position            = UDim2.new(0.5,0,0.5,0),
+		BackgroundTransparency = 0,
+	}):Play()
+
+	local TopBar = Instance.new("Frame", Card)
+	TopBar.Size             = UDim2.new(1,0,0,56)
+	TopBar.BackgroundColor3 = Color3.fromRGB(18,18,28)
+	TopBar.BorderSizePixel  = 0
+	local tc = Instance.new("UICorner", TopBar)
+	tc.CornerRadius = UDim.new(0,16)
+	local fix = Instance.new("Frame", TopBar)
+	fix.Size             = UDim2.new(1,0,0,16)
+	fix.Position         = UDim2.new(0,0,1,-16)
+	fix.BackgroundColor3 = Color3.fromRGB(18,18,28)
+	fix.BorderSizePixel  = 0
+
+	local TitleLbl = Instance.new("TextLabel", TopBar)
+	TitleLbl.Size                  = UDim2.new(1,-16,0,30)
+	TitleLbl.Position              = UDim2.new(0,16,0,6)
+	TitleLbl.BackgroundTransparency = 1
+	TitleLbl.Text                  = Title
+	TitleLbl.TextColor3            = Color3.new(1,1,1)
+	TitleLbl.TextSize              = 17
+	TitleLbl.Font                  = Enum.Font.GothamBold
+	TitleLbl.TextXAlignment        = Enum.TextXAlignment.Left
+
+	local SubLbl = Instance.new("TextLabel", TopBar)
+	SubLbl.Size                  = UDim2.new(1,-16,0,18)
+	SubLbl.Position              = UDim2.new(0,16,0,32)
+	SubLbl.BackgroundTransparency = 1
+	SubLbl.Text                  = SubTitle
+	SubLbl.TextColor3            = Color3.fromRGB(140,140,165)
+	SubLbl.TextSize              = 11
+	SubLbl.Font                  = Enum.Font.Gotham
+	SubLbl.TextXAlignment        = Enum.TextXAlignment.Left
+
+	local StatusLbl = Instance.new("TextLabel", Card)
+	StatusLbl.Size                  = UDim2.new(1,-32,0,18)
+	StatusLbl.Position              = UDim2.new(0,16,0,66)
+	StatusLbl.BackgroundTransparency = 1
+	StatusLbl.Text                  = ""
+	StatusLbl.TextColor3            = Color3.fromRGB(200,80,80)
+	StatusLbl.TextSize              = 11
+	StatusLbl.Font                  = Enum.Font.GothamSemibold
+	StatusLbl.TextXAlignment        = Enum.TextXAlignment.Left
+
+	local BoxBg = Instance.new("Frame", Card)
+	BoxBg.Size             = UDim2.new(1,-32,0,44)
+	BoxBg.Position         = UDim2.new(0,16,0,90)
+	BoxBg.BackgroundColor3 = Color3.fromRGB(22,22,32)
+	BoxBg.BorderSizePixel  = 0
+	local bc = Instance.new("UICorner", BoxBg)
+	bc.CornerRadius = UDim.new(0,10)
+	local bs = Instance.new("UIStroke", BoxBg)
+	bs.Color = Color3.fromRGB(60,60,90) bs.Thickness = 1
+
+	local KeyBox = Instance.new("TextBox", BoxBg)
+	KeyBox.Size                  = UDim2.new(1,-44,1,0)
+	KeyBox.Position              = UDim2.new(0,12,0,0)
+	KeyBox.BackgroundTransparency = 1
+	KeyBox.Text                  = ""
+	KeyBox.PlaceholderText       = "Digite a key aqui..."
+	KeyBox.PlaceholderColor3     = Color3.fromRGB(90,90,110)
+	KeyBox.TextColor3            = Color3.new(1,1,1)
+	KeyBox.TextSize              = 13
+	KeyBox.Font                  = Enum.Font.Gotham
+	KeyBox.ClearTextOnFocus      = false
+	KeyBox.BorderSizePixel       = 0
+
+	local EyeBtn = Instance.new("TextButton", BoxBg)
+	EyeBtn.Size                  = UDim2.new(0,32,0,32)
+	EyeBtn.Position              = UDim2.new(1,-38,0.5,-16)
+	EyeBtn.BackgroundTransparency = 1
+	EyeBtn.Text                  = "👁"
+	EyeBtn.TextSize              = 16
+	EyeBtn.Font                  = Enum.Font.Gotham
+	EyeBtn.TextColor3            = Color3.fromRGB(120,120,150)
+
+	local hidden = true
+	KeyBox.TextTransparency = 0
+
+	local function HideText()
+		if hidden then
+			KeyBox.Font = Enum.Font.Code
+		else
+			KeyBox.Font = Enum.Font.Gotham
+		end
+	end
+
+	EyeBtn.MouseButton1Click:Connect(function()
+		hidden = not hidden
+		EyeBtn.TextColor3 = hidden and Color3.fromRGB(120,120,150) or Color3.fromRGB(100,80,255)
+		HideText()
+	end)
+	HideText()
+
+	local ConfirmBtn = Instance.new("TextButton", Card)
+	ConfirmBtn.Size             = UDim2.new(1,-32, 0, 40)
+	ConfirmBtn.Position         = UDim2.new(0,16,0,148)
+	ConfirmBtn.BackgroundColor3 = Color3.fromRGB(100,80,255)
+	ConfirmBtn.Text             = "Confirmar"
+	ConfirmBtn.TextColor3       = Color3.new(1,1,1)
+	ConfirmBtn.TextSize         = 14
+	ConfirmBtn.Font             = Enum.Font.GothamBold
+	ConfirmBtn.BorderSizePixel  = 0
+	local conc = Instance.new("UICorner", ConfirmBtn)
+	conc.CornerRadius = UDim.new(0,10)
+
+	ConfirmBtn.MouseEnter:Connect(function()
+		TweenService:Create(ConfirmBtn, TweenInfo.new(0.12), {BackgroundColor3 = Color3.fromRGB(120,100,255)}):Play()
+	end)
+	ConfirmBtn.MouseLeave:Connect(function()
+		TweenService:Create(ConfirmBtn, TweenInfo.new(0.12), {BackgroundColor3 = Color3.fromRGB(100,80,255)}):Play()
+	end)
+
+	if Site ~= "" then
+		local SiteBtn = Instance.new("TextButton", Card)
+		SiteBtn.Size                  = UDim2.new(1,-32,0,32)
+		SiteBtn.Position              = UDim2.new(0,16,0,200)
+		SiteBtn.BackgroundColor3      = Color3.fromRGB(22,22,32)
+		SiteBtn.Text                  = "🔗  Obter Key"
+		SiteBtn.TextColor3            = Color3.fromRGB(100,80,255)
+		SiteBtn.TextSize              = 12
+		SiteBtn.Font                  = Enum.Font.GothamSemibold
+		SiteBtn.BorderSizePixel       = 0
+		local sc = Instance.new("UICorner", SiteBtn)
+		sc.CornerRadius = UDim.new(0,8)
+		local ss = Instance.new("UIStroke", SiteBtn)
+		ss.Color = Color3.fromRGB(100,80,255) ss.Thickness = 1
+
+		SiteBtn.MouseEnter:Connect(function()
+			TweenService:Create(SiteBtn, TweenInfo.new(0.12), {BackgroundColor3 = Color3.fromRGB(30,28,48)}):Play()
+		end)
+		SiteBtn.MouseLeave:Connect(function()
+			TweenService:Create(SiteBtn, TweenInfo.new(0.12), {BackgroundColor3 = Color3.fromRGB(22,22,32)}):Play()
+		end)
+		SiteBtn.MouseButton1Click:Connect(function()
+			setclipboard(Site)
+			SiteBtn.Text = "✅  Link copiado!"
+			task.delay(2, function()
+				SiteBtn.Text = "🔗  Obter Key"
+			end)
+		end)
+	end
+
+	local attempts = 0
+	local maxAttempts = 5
+
+	local function CheckKey()
+		local typed = KeyBox.Text
+		local valid = false
+		for _, k in ipairs(validKeys) do
+			if typed == k then
+				valid = true
+				break
+			end
+		end
+
+		if valid then
+			bs.Color = Color3.fromRGB(80,200,120)
+			StatusLbl.Text       = "✅  Key válida! Carregando..."
+			StatusLbl.TextColor3 = Color3.fromRGB(80,200,120)
+			TweenService:Create(ConfirmBtn, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(60,180,100)}):Play()
+			task.delay(1, function()
+				TweenService:Create(Card, TweenInfo.new(0.2, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+					Position            = UDim2.new(0.5,0,0.6,0),
+					BackgroundTransparency = 1,
+				}):Play()
+				TweenService:Create(Bg, TweenInfo.new(0.2), {BackgroundTransparency = 1}):Play()
+				task.delay(0.25, function()
+					ScreenGui:Destroy()
+					OnSuccess()
+				end)
+			end)
+		else
+			attempts = attempts + 1
+			bs.Color = Color3.fromRGB(200,70,70)
+			TweenService:Create(ConfirmBtn, TweenInfo.new(0.1), {BackgroundColor3 = Color3.fromRGB(180,60,60)}):Play()
+			task.delay(0.2, function()
+				TweenService:Create(ConfirmBtn, TweenInfo.new(0.1), {BackgroundColor3 = Color3.fromRGB(100,80,255)}):Play()
+			end)
+
+			if attempts >= maxAttempts then
+				StatusLbl.Text       = "❌  Muitas tentativas. Saindo..."
+				StatusLbl.TextColor3 = Color3.fromRGB(200,70,70)
+				ConfirmBtn.Active    = false
+				task.delay(2, function()
+					ScreenGui:Destroy()
+					OnFail()
+				end)
+			else
+				StatusLbl.Text       = "❌  Key inválida! Tentativas restantes: " .. (maxAttempts - attempts)
+				StatusLbl.TextColor3 = Color3.fromRGB(200,70,70)
+				task.delay(0.3, function()
+					bs.Color = Color3.fromRGB(60,60,90)
+				end)
+			end
+		end
+	end
+
+	ConfirmBtn.MouseButton1Click:Connect(CheckKey)
+	KeyBox.FocusLost:Connect(function(enter)
+		if enter then CheckKey() end
+	end)
+end
+
 -- ── MakeWindow ────────────────────────────────────
 function Library:MakeWindow(config)
     config = config or {}
