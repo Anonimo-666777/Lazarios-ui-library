@@ -240,6 +240,12 @@ Win:Notify({
 })
 ```
 
+TIPO DE NOTIFICAÇÕES:
+- Success
+- Error
+- Warning
+- Info
+
 ## 💬Dialog 
 
 ```lua
