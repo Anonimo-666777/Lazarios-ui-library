@@ -55,11 +55,33 @@ Uma lib feita por david e menkato os canais estão na parte de Créditos nesse r
 local NexusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Anonimo-666777/Lazarios-ui-library/main/CoreLib.lua"))()
 ```
 
+## KeySystem
+
+NexusUI:MakeKeySystem({
+    Title    = "David Hub",
+    SubTitle = "Entre no nosso Discord para obter a key!",
+    Site     = "https://discord.gg/seulink",
+    Key      = "david2026",
+    Key2     = "menkato123",
+    Key3     = "nexusui",
+    OnSuccess = function()
+        -- Abre o hub depois que a key for aceita
+        local Win = NexusUI:MakeWindow({ Title = "David Hub" })
+    end,
+    OnFail = function()
+        -- Opcional, roda se esgotar as tentativas
+        print("Key incorreta, saindo...")
+    end,
+})
+
+bote a quantidade de key que quiser
+
 ## 🖼Window
 
 ```lua
 local Win = NexusUI:MakeWindow({
     Title = "Meu Hub",
+    SubTitle = "v0.1"
     Theme = "Dark",
     RGBBorder = false,
     LogoId    = "rbxassetid://123456", 
