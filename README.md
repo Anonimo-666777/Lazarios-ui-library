@@ -76,7 +76,10 @@ NexusUI:MakeKeySystem({
 })
 ```
 
-bote a quantidade de key que quiser
+bote a quantidade de key que quiser com 
+```lua
+Key      = "SuaKey",
+```
 
 ## 🖼Window
 
