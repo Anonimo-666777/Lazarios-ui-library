@@ -86,7 +86,7 @@ Key      = "SuaKey",
 ```lua
 local Win = NexusUI:MakeWindow({
     Title = "Meu Hub",
-    SubTitle = "v0.1"
+    SubTitle = "v0.1", 
     Theme = "Dark",
     RGBBorder = false,
     LogoId    = "rbxassetid://123456", 
