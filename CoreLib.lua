@@ -677,7 +677,7 @@ end
     CloseBtn.Size              = UDim2.new(0,28,0,28)
     CloseBtn.Position          = UDim2.new(1,-36,0.5,-14)
     CloseBtn.BackgroundColor3  = Color3.fromRGB(200,60,60)
-    CloseBtn.Text              = "✕"
+    CloseBtn.Text              = "X"
     CloseBtn.TextColor3        = Color3.new(1,1,1)
     CloseBtn.TextSize          = 13
     CloseBtn.Font              = Enum.Font.GothamBold
@@ -1214,7 +1214,7 @@ end
             Arrow.Size             = UDim2.new(0,16,1,0)
             Arrow.Position         = UDim2.new(1,-22,0,0)
             Arrow.BackgroundTransparency = 1
-            Arrow.Text             = "▾"
+            Arrow.Text             = "V"
             Arrow.TextColor3       = T.SubText
             Arrow.TextSize         = 14
             Arrow.Font             = Enum.Font.GothamBold
