@@ -288,10 +288,10 @@ Tab1:MakeImage({
 davidgames3d e menkato
 
 **👨‍🎨Interface ui:**
-davidgames3d e menkato
+davidgames3d
 
 **👨‍💻código:**
-davidgames3d e menkato 
+davidgames3d 
 
 # **redes sociais**
 
