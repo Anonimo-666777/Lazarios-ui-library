@@ -587,6 +587,8 @@ function Library:MakeWindow(config)
         ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
     end
 
+_G.LazariosScreenGui = ScreenGui
+
     -- ── Botão Flutuante (Toggle) ──
     local ToggleBtn = Instance.new("ImageButton", ScreenGui)
     ToggleBtn.Name            = "ToggleButton"
