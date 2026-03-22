@@ -10,12 +10,6 @@
 
 ---
 
-<p align="center">
-  <a href="https://github.com/Anonimo-666777/Lazarios-ui-library?tab=readme-ov-file#info">
-    <img src="https://github.com/Anonimo-666777/Lazarios-ui-library/blob/main/1736%20Sem%20T%C3%ADtulo_20260305214507.png" alt="Versão da lib" height="90px">
-  </a>
-</p>
-
 Uma lib feita por david e menkato os canais estão na parte de Créditos nesse readme terá como usar a lib e créditos e versão mais recente e outras infos sobre🐺🖤🤍
 
 <p align="center">
@@ -313,4 +307,4 @@ davidgames3d
   </a>
 </p>
 
-©2026 lib Davidgames3d e menkato©
+©2026 lib Davidgames3d©
