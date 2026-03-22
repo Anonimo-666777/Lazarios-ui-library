@@ -1,6 +1,6 @@
 -- ================================================
---         Lazarus Library - by davidgames3d
---         Versão: 1.0.5 | Luau | Roblox
+--         Lazarus Library - by davidgames3d and menkayto
+--         Versão: 1.0.4 | Luau | Roblox
 -- ================================================
 -- Uso via loadstring:
 --   local NexusUI = loadstring(game:HttpGet("SUA_URL"))()
@@ -1718,75 +1718,11 @@ end
     end
 
     -- ── ChangeTheme ──────────────────────────────
-function WindowObj:ChangeTheme(name)
-    local newTheme = Themes[name]
-    if not newTheme then return end
-    T = newTheme
-
-    -- Janela principal
-    Tween(MainFrame, {BackgroundColor3 = T.Background}, 0.3)
-
-    -- TopBar e seu fix de canto
-    Tween(TopBar, {BackgroundColor3 = T.TopBar}, 0.3)
-    Tween(CornerFix, {BackgroundColor3 = T.TopBar}, 0.3)
-
-    -- TitleLabel
-    Tween(TitleLabel, {TextColor3 = T.Text}, 0.3)
-
-    -- TabBar (sidebar)
-    Tween(TabBar, {BackgroundColor3 = T.Secondary}, 0.3)
-    Tween(Sep, {BackgroundColor3 = T.Border}, 0.3)
-    TabList.ScrollBarImageColor3 = T.Accent
-
-    -- Botões de tab
-    for _, tabObj in ipairs(Tabs) do
-        local isActive = (ActiveTab == tabObj)
-        Tween(tabObj.Button, {
-            BackgroundColor3 = isActive and T.Accent or T.Element,
-            TextColor3 = isActive and T.Text or T.SubText,
-        }, 0.25)
-        if tabObj.BtnIcon then
-            tabObj.BtnIcon.ImageColor3 = isActive and T.Text or T.SubText
-        end
-        tabObj.Page.ScrollBarImageColor3 = T.Accent
+    function WindowObj:ChangeTheme(name)
+        T = Themes[name] or T
     end
 
-    -- Todos os descendentes do MainFrame
-    for _, obj in ipairs(MainFrame:GetDescendants()) do
-        -- Frames de elemento (botões, toggles, sliders, etc)
-        if obj:IsA("Frame") and obj.Name == "" then
-            if obj.BackgroundColor3 ~= T.Background
-            and obj.BackgroundColor3 ~= T.TopBar
-            and obj.BackgroundColor3 ~= T.Secondary
-            and obj.BackgroundTransparency < 1 then
-                Tween(obj, {BackgroundColor3 = T.Element}, 0.25)
-            end
-        end
-
-        -- UIStroke (bordas)
-        if obj:IsA("UIStroke") then
-            local p = obj.Parent
-            if p and p:IsA("Frame") or (p and p:IsA("TextButton")) then
-                Tween(obj, {Color = T.Border}, 0.25)
-            end
-        end
-
-        -- TextLabel genérico
-        if obj:IsA("TextLabel") and obj.BackgroundTransparency == 1 then
-            if obj.TextColor3 ~= T.Accent
-            and obj.TextColor3 ~= T.SubText then
-                Tween(obj, {TextColor3 = T.Text}, 0.25)
-            end
-        end
-
-        -- ScrollBarColor das ScrollingFrames internas
-        if obj:IsA("ScrollingFrame") then
-            obj.ScrollBarImageColor3 = T.Accent
-        end
-    end
-
-    -- ToggleBtn (botão flutuante)
-    Tween(ToggleBtn, {BackgroundColor3 = T.Accent}, 0.3)
+    return WindowObj
 end
 
 return Library
